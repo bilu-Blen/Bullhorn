@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+</head>
+<body>
+
+<a href="/">Show a Messages</a> <br />
+
+Title : <span th:text="${message.name}"></span><br />
+Instructor : <span th:text="${message.content}"></span><br />
+Description : <span th:text="${message.date}"></span><br />
+Credits : <span th:text="${message.sentby}"></span><br />
+<a th:href="@{/delete/{id}(id=${message.id})}">Delete this course</a>
+
+
+</body>
+</html>
