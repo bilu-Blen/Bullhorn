@@ -19,13 +19,13 @@
             <div class="col-6" id="div1">
                 <a href="/add" class="h1">Add a Course</a> <br />
 
-                <table>
+                <table  class="table">
                     <tr>
-                        <th>Name</th>
-                        <th>Content</th>
-                        <th>Date</th>
-                        <th>Sentby</th>
-                        <td>Actions</td>
+                        <th scope="col">Name</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Sentby</th>
+                        <td scope="col">Actions</td>
                     </tr>
 
                     <tr th:each="message: ${messages}">
